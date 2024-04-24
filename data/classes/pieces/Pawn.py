@@ -1,6 +1,7 @@
 import pygame
 
 from data.classes.Piece import Piece
+from data.classes.ImageLoader import resource_path
 
 
 class Pawn(Piece):
@@ -8,7 +9,7 @@ class Pawn(Piece):
         super().__init__(pos, colour, board)
 
         img_path = 'data/imgs/' + colour[0] + '_pawn.png'
-        self.img = pygame.image.load(img_path)
+        self.img = pygame.image.load(resource_path(img_path))
         self.img = pygame.transform.scale(self.img, (board.tile_width - 35, board.tile_height - 35))
 
         self.notation = ' '

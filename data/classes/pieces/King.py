@@ -1,6 +1,7 @@
 import pygame
 
 from data.classes.Piece import Piece
+from data.classes.ImageLoader import resource_path
 
 
 class King(Piece):
@@ -8,7 +9,7 @@ class King(Piece):
         super().__init__(pos, colour, board)
 
         img_path = 'data/imgs/' + colour[0] + '_king.png'
-        self.img = pygame.image.load(img_path)
+        self.img = pygame.image.load(resource_path(img_path))
         self.img = pygame.transform.scale(self.img, (board.tile_width - 20, board.tile_height - 20))
 
         self.notation = 'K'
