@@ -1,5 +1,7 @@
-# Pyenv files
-.python-version
-
 # Idea files
 .idea/
+
+# pyinstaller files
+build/
+*.spec
+dist/
