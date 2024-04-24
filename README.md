@@ -6,7 +6,7 @@ I used pyenv ([tutorial for mac here](https://medium.com/marvelous-mlops/the-rig
 to get my python environment setup.
 
 Once you have python just run
-`pip intall pygame`
+`pip install pygame`
 
 ### Building Game
 To compile the game into a single executable for the platform you are developing on, you'll
